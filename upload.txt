@@ -1,6 +1,0 @@
-pwd
-git status
-
-git add .
-git commit -m "Upload project"
-git push

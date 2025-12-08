@@ -5,13 +5,13 @@ RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-# 2. Átírja a /NYELV/OLDAL kérést, és beállítja a lang és page GET paramétereket
-# Pl.: /de/gallery -> index.php?lang=de&page=gallery
-RewriteRule ^([a-z]{2})/(.*)$ index.php?lang=$1&page=$2 [L,QSA]
-
-# 3. Kezeli a főoldal hívását (pl. /de/ vagy /hu/)
+# 2. Kezeli a főoldal hívását (pl. /de/ vagy /hu/)
 # Pl.: /de/ -> index.php?lang=de&page=home
 RewriteRule ^([a-z]{2})/?$ index.php?lang=$1&page=home [L,QSA]
+
+# 3. Átírja a /NYELV/OLDAL kérést, és beállítja a lang és page GET paramétereket
+# Pl.: /de/gallery -> index.php?lang=de&page=gallery
+RewriteRule ^([a-z]{2})/(.*)$ index.php?lang=$1&page=$2 [L,QSA]
 
 # 4. Kezeli, ha a felhasználó nyelvkód nélkül hívja a főoldalt (pl. pelda.hu)
 RewriteRule ^$ index.php?page=home [L]
