@@ -3,6 +3,9 @@ return [
     'logo_cim' => 'Ágnes Ujvári',
     'oldal_cim_home' => 'Handmade Jewelry Portfolio by Ágnes Ujvári',
     'oldal_cim_gallery' => 'Gallery - Handmade Jewelry Portfolio by Ágnes Ujvári',
+
+    'meta_description_home' => 'Handmade beaded jewelry by Ágnes Ujvári in Germany: unique sets, earrings, bracelets, rings and accessories crafted in her studio. Browse the latest pieces and email to purchase.',
+    'meta_description_gallery' => 'Explore the full beaded jewelry collection of Ágnes Ujvári with detailed photos of sets, earrings, bracelets, rings and small accessories.',
     
     'menu_sets' => 'Sets',
     'menu_earrings' => 'Earrings',
