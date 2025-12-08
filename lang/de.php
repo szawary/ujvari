@@ -3,6 +3,9 @@ return [
     'logo_cim' => 'Ágnes Ujvári',
     'oldal_cim_home' => 'Handgemachtes Schmuckportfolio von Ágnes Ujvári',
     'oldal_cim_gallery' => 'Galerie - Handgemachtes Schmuckportfolio von Ágnes Ujvári',
+
+    'meta_description_home' => 'Handgefertigter Perlenschmuck von Ágnes Ujvári in Deutschland: einzigartige Sets, Ohrringe, Armbänder, Ringe und Accessoires aus ihrem Atelier. Entdecken Sie die neuesten Stücke und schreiben Sie mir per E-Mail für einen Kauf.',
+    'meta_description_gallery' => 'Entdecken Sie die gesamte Perlenschmuck-Kollektion von Ágnes Ujvári mit detaillierten Fotos von Sets, Ohrringen, Armbändern, Ringen und kleinen Accessoires.',
     
     'menu_sets' => 'Sets',
     'menu_earrings' => 'Ohrringe',

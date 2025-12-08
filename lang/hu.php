@@ -3,6 +3,9 @@ return [
     'logo_cim' => 'Ujvári Ágnes',
     'oldal_cim_home' => 'Ujvári Ágnes kézműves ékszerportfóliója',
     'oldal_cim_gallery' => 'Galéria - Ujvári Ágnes kézműves ékszerportfóliója',
+
+    'meta_description_home' => 'Kézzel készített gyöngy ékszerek Ujvári Ágnestől: egyedi szettek, fülbevalók, karkötők, gyűrűk és kiegészítők németországi műhelyéből. Nézze meg legújabb munkáimat, és írjon e-mailt a vásárláshoz.',
+    'meta_description_gallery' => 'Fedezze fel Ujvári Ágnes teljes gyöngy ékszer kollekcióját: részletes fotók szettekről, fülbevalókról, karkötőkről, gyűrűkről és kiegészítőkről.',
     
     'menu_sets' => 'Szettek',
     'menu_earrings' => 'Fülbevalók',
