@@ -20,6 +20,253 @@ return [
     'email' => 'contact@agnesujvari.com',
     'lablec_jogok' => '&copy; 2025 Ágnes Ujvári. Alle Rechte vorbehalten.',
 
+    'gallery_intro_title' => 'Gesamte Kollektion',
+    'gallery_intro_text' => 'Stöbere durch all meine einzigartigen, handgefertigten Schmuckstücke.',
+
+    'gallery_collection' => [
+        'sets' => [
+            'cim' => 'Sets',
+            'termekek' => [
+                [
+                    'nev' => 'Rotfee-Set',
+                    'leiras' => 'Aus roten und silbernen Perlen gefertigt.',
+                    'kep_base' => '../images/2_szettek/IMG_2317',
+                ],
+                [
+                    'nev' => 'Metallic-Blaues Set',
+                    'leiras' => 'Funkelndes Set aus metallicblauen Perlen.',
+                    'kep_base' => '../images/2_szettek/IMG_2450',
+                ],
+                [
+                    'nev' => 'Tautropfen-Pfad Set',
+                    'leiras' => 'In Mint-Silber Farbkombination.',
+                    'kep_base' => '../images/2_szettek/IMG_2538',
+                ],
+                [
+                    'nev' => 'Mondschein-Set',
+                    'leiras' => 'Elegantes, silbernes Accessoire.',
+                    'kep_base' => '../images/2_szettek/IMG_2489',
+                ],
+                [
+                    'nev' => 'Blaufee-Set',
+                    'leiras' => 'Blau und Silber.',
+                    'kep_base' => '../images/2_szettek/IMG_2589',
+                ],
+                [
+                    'nev' => 'Papayafee-Set',
+                    'leiras' => 'Gelb und Silber.',
+                    'kep_base' => '../images/2_szettek/IMG_2494',
+                ],
+                [
+                    'nev' => 'Türkis-Set',
+                    'leiras' => 'Karibisch-türkisfarbene und silberne Perlen.',
+                    'kep_base' => '../images/2_szettek/IMG_2768',
+                ],
+            ],
+        ],
+        'earrings' => [
+            'cim' => 'Ohrringe',
+            'termekek' => [
+                [
+                    'nev' => 'Metallic-Blaue Ohrringe',
+                    'leiras' => 'Lang, mit metallic Glanz.',
+                    'kep_base' => '../images/3_fulbevalok/IMG_2461',
+                ],
+                [
+                    'nev' => 'Mondschein Ohrringe',
+                    'leiras' => 'Aus langen Silberperlen gefertigt.',
+                    'kep_base' => '../images/3_fulbevalok/IMG_2472',
+                ],
+                [
+                    'nev' => 'Tautropfen-Pfad Ohrringe',
+                    'leiras' => 'Klein, 16 mm, aber sehr niedlich.',
+                    'kep_base' => '../images/3_fulbevalok/IMG_2541',
+                ],
+                [
+                    'nev' => 'Duett',
+                    'leiras' => 'Aus lachsfarbenen und kastanienbraunen Perlen.',
+                    'kep_base' => '../images/3_fulbevalok/IMG_2554',
+                ],
+                [
+                    'nev' => 'Silbertraube Ohrringe',
+                    'leiras' => 'Große Perlen in Silber- und Traubenfarbtönen.',
+                    'kep_base' => '../images/3_fulbevalok/IMG_2576',
+                ],
+                [
+                    'nev' => 'Papayafee Ohrringe',
+                    'leiras' => 'Silberne Form kombiniert mit Papaya-Farbe.',
+                    'kep_base' => '../images/3_fulbevalok/IMG_2511',
+                ],
+                [
+                    'nev' => 'Kata Ohrringe',
+                    'leiras' => 'Kombination aus matten und glänzenden Blautönen.',
+                    'kep_base' => '../images/3_fulbevalok/IMG_2200',
+                ],
+                [
+                    'nev' => 'Silberstern Ohrringe',
+                    'leiras' => 'Aus silbernen Kugelperlen gefertigt.',
+                    'kep_base' => '../images/3_fulbevalok/IMG_2227',
+                ],
+                [
+                    'nev' => 'Purpur-Ohrringe',
+                    'leiras' => '6 cm langes Schmuckstück.',
+                    'kep_base' => '../images/3_fulbevalok/IMG_2266',
+                ],
+                [
+                    'nev' => 'Rotfee Ohrringe',
+                    'leiras' => '4 cm lange silberne Ohrringe.',
+                    'kep_base' => '../images/3_fulbevalok/IMG_2327',
+                ],
+                [
+                    'nev' => 'Grüntau Ohrringe',
+                    'leiras' => 'Matte und glänzende Grüntöne mit hellem Silber.',
+                    'kep_base' => '../images/3_fulbevalok/IMG_2363',
+                ],
+                [
+                    'nev' => 'Bienchen Ohrringe',
+                    'leiras' => 'Für Kinder und Erwachsene gleichermaßen.',
+                    'kep_base' => '../images/3_fulbevalok/IMG_2390',
+                ],
+                [
+                    'nev' => 'Goldstern Ohrringe',
+                    'leiras' => 'Goldene, Kugelperlen Ohrringe.',
+                    'kep_base' => '../images/3_fulbevalok/IMG_2222',
+                ],
+                [
+                    'nev' => 'Pistazientropfen',
+                    'leiras' => 'Große, tropfenförmige.',
+                    'kep_base' => '../images/3_fulbevalok/IMG_2273',
+                ],
+                [
+                    'nev' => 'Marienkäfer Ohrringe',
+                    'leiras' => 'Ohrringe für Erwachsene und Kinder gleichermaßen.',
+                    'kep_base' => '../images/3_fulbevalok/IMG_2429',
+                ],
+            ],
+        ],
+        'bracelets' => [
+            'cim' => 'Armbänder',
+            'termekek' => [
+                [
+                    'nev' => 'Farbverlauf Armband',
+                    'leiras' => 'Aus matten Creme- und schimmernd blauen Perlen gefertigt.',
+                    'kep_base' => '../images/4_karkotok/IMG_2732',
+                ],
+                [
+                    'nev' => 'Metallicblau Armband',
+                    'leiras' => 'Breit, einfarbig metallicblau.',
+                    'kep_base' => '../images/4_karkotok/IMG_2443',
+                ],
+                [
+                    'nev' => 'Rotfee Armband',
+                    'leiras' => 'Rot und Silber.',
+                    'kep_base' => '../images/4_karkotok/IMG_2249',
+                ],
+                [
+                    'nev' => 'Bronzestein Armband',
+                    'leiras' => 'Das Zusammenspiel von Bronze, Papaya, Silber und Blassrosa.',
+                    'kep_base' => '../images/4_karkotok/IMG_2514',
+                ],
+                [
+                    'nev' => 'Violettstein',
+                    'leiras' => 'Schimmerndes Violett und Silber, ergänzt mit Grün.',
+                    'kep_base' => '../images/4_karkotok/IMG_2521',
+                ],
+                [
+                    'nev' => 'Papayafee Armband',
+                    'leiras' => 'Aus Papaya- und Silberperlen.',
+                    'kep_base' => '../images/4_karkotok/IMG_2491',
+                ],
+                [
+                    'nev' => 'Tautropfen-Pfad Armband',
+                    'leiras' => 'Kombination aus matten und glänzenden Blautönen.',
+                    'kep_base' => '../images/4_karkotok/IMG_2203',
+                ],
+                [
+                    'nev' => 'Blaustein Armband',
+                    'leiras' => 'Zwei Blautöne mit cremefarbenen Perlen.',
+                    'kep_base' => '../images/4_karkotok/IMG_2661',
+                ],
+            ],
+        ],
+        'rings' => [
+            'cim' => 'Ringe',
+            'termekek' => [
+                [
+                    'nev' => 'Rotfee Ring',
+                    'leiras' => 'Rot und Silber.',
+                    'kep_base' => '../images/5_gyuruk/IMG_2318',
+                ],
+                [
+                    'nev' => 'Sonnenkönig Ring',
+                    'leiras' => 'Gold und Cremefarbe.',
+                    'kep_base' => '../images/5_gyuruk/IMG_2600',
+                ],
+                [
+                    'nev' => 'Tautropfen-Pfad Ring',
+                    'leiras' => 'In Mint-Silber Farbkombination.',
+                    'kep_base' => '../images/5_gyuruk/IMG_2545',
+                ],
+                [
+                    'nev' => 'Kata Ring',
+                    'leiras' => 'Kombination aus matten und glänzenden Blautönen.',
+                    'kep_base' => '../images/5_gyuruk/IMG_2199',
+                ],
+                [
+                    'nev' => 'Mondschein Ring',
+                    'leiras' => 'Aus Silberperlen.',
+                    'kep_base' => '../images/5_gyuruk/IMG_2336',
+                ],
+                [
+                    'nev' => 'Metallicblauer Ring',
+                    'leiras' => 'Schimmernd metallicblau.',
+                    'kep_base' => '../images/5_gyuruk/IMG_2345',
+                ],
+                [
+                    'nev' => 'Papayafee Ring',
+                    'leiras' => 'Aus Papaya- und Silberperlen.',
+                    'kep_base' => '../images/5_gyuruk/IMG_2508',
+                ],
+                [
+                    'nev' => 'Blaufee Ring',
+                    'leiras' => 'Glitzerndes Meeresblau und Silber.',
+                    'kep_base' => '../images/5_gyuruk/IMG_2593',
+                ],
+            ],
+        ],
+        'smallThings' => [
+            'cim' => 'Kleinigkeiten',
+            'termekek' => [
+                [
+                    'nev' => 'Feder-Ring',
+                    'leiras' => 'Personalisierbares Stück.',
+                    'kep_base' => '../images/6_aprosagok/IMG_2746',
+                ],
+                [
+                    'nev' => 'Labubu Schlüsselanhänger',
+                    'leiras' => 'Hänger, der auch an die Tasche gehängt werden kann.',
+                    'kep_base' => '../images/6_aprosagok/IMG_2668',
+                ],
+                [
+                    'nev' => 'Among Us Figur',
+                    'leiras' => 'Schlüsselanhänger, der auch an die Tasche gehängt werden kann.',
+                    'kep_base' => '../images/6_aprosagok/IMG_2442',
+                ],
+                [
+                    'nev' => 'Bienchen Schlüsselanhänger',
+                    'leiras' => 'Hänger, der auch an die Tasche gehängt werden kann.',
+                    'kep_base' => '../images/6_aprosagok/IMG_2397',
+                ],
+                [
+                    'nev' => 'Violinschlüssel-Anhänger',
+                    'leiras' => 'Anhänger in Gold und Creme.',
+                    'kep_base' => '../images/6_aprosagok/IMG_2590a',
+                ],
+            ],
+        ],
+    ],
+
+
     'section_title_01' => 'Meine neuesten Arbeiten',
     'section_title_02' => 'Sets',
     'section_title_03' => 'Ohrringe',
