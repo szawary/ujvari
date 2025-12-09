@@ -1,0 +1,4 @@
+# Robots exclusion file for agnesujvari.com
+# Allows all well-behaved crawlers to index the public site.
+User-agent: *
+Allow: /
