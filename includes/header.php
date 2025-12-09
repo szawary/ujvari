@@ -70,8 +70,12 @@ global $nyelv, $keresett_oldal, $FORDITASOK;
             <a href="/en/<?php echo $aktualis_oldal; ?>" <?php if ($nyelv == 'en') echo 'class="active"'; ?>>EN</a>
         </nav>
         
-        <nav class="main-nav">
-            <ul>
+        <nav class="main-nav" aria-label="Fő navigáció">
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu-list">
+                <span class="menu-icon" aria-hidden="true"></span>
+                <span class="menu-label">Menü</span>
+            </button>
+            <ul id="primary-menu-list">
             <?php
             // DEFINIÁLJUK A MENÜPONTOK STRUKTÚRÁJÁT ÉS ANCHOR ID-IT
             // A 'section_title_XX' stringek a hu.php-ban deklarált kulcsokra hivatkoznak.
