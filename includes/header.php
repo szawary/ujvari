@@ -26,6 +26,8 @@ global $nyelv, $keresett_oldal, $FORDITASOK;
     <link rel="alternate" href="<?php echo $ALAP_DOMAIN; ?>/en/<?php echo $keresett_oldal; ?>" hreflang="en" />
     <link rel="alternate" href="<?php echo $ALAP_DOMAIN; ?>/en/<?php echo $keresett_oldal; ?>" hreflang="x-default" />
 
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
     <?php if (!empty($meta_description)) : ?>
         <meta name="description" content="<?php echo htmlspecialchars($meta_description, ENT_QUOTES, 'UTF-8'); ?>">
         <meta property="og:title" content="<?php echo htmlspecialchars($FORDITASOK['oldal_cim_' . $keresett_oldal], ENT_QUOTES, 'UTF-8'); ?>">
