@@ -41,15 +41,6 @@ global $nyelv, $keresett_oldal, $FORDITASOK;
     <link rel="stylesheet" href="/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZH63SMZVRQ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-ZH63SMZVRQ');
-    </script>
-
 </head>
 <body>
 
