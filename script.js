@@ -360,6 +360,7 @@ const COOKIE_TRANSLATIONS = {
 };
 
 let analyticsLoaded = false;
+let analyticsScriptTag = null;
 
 function initializeCookieConsent() {
     const consentBar = document.getElementById('cookie-consent');
@@ -499,17 +500,19 @@ function updateAnalyticsState(allowAnalytics) {
 
     if (allowAnalytics) {
         loadAnalytics();
+    } else {
+        disableAnalytics();
     }
 }
 
 function loadAnalytics() {
     if (analyticsLoaded) return;
 
-    const script = document.createElement('script');
-    script.async = true;
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+    analyticsScriptTag = document.createElement('script');
+    analyticsScriptTag.async = true;
+    analyticsScriptTag.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
 
-    script.onload = () => {
+    analyticsScriptTag.onload = () => {
         window.dataLayer = window.dataLayer || [];
         function gtag() { window.dataLayer.push(arguments); }
         window.gtag = gtag;
@@ -517,6 +520,23 @@ function loadAnalytics() {
         gtag('config', GA_MEASUREMENT_ID);
     };
 
-    document.head.appendChild(script);
+    document.head.appendChild(analyticsScriptTag);
     analyticsLoaded = true;
+}
+
+function disableAnalytics() {
+    if (analyticsScriptTag) {
+        analyticsScriptTag.remove();
+        analyticsScriptTag = null;
+    }
+
+    if (window.dataLayer && Array.isArray(window.dataLayer)) {
+        window.dataLayer.length = 0;
+    }
+
+    if (typeof window.gtag === 'function') {
+        window.gtag = function noop() {};
+    }
+
+    analyticsLoaded = false;
 }
