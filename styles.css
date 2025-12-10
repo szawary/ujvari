@@ -704,6 +704,70 @@ main {
     display: inline-flex;
 }
 
+@media (max-width: 600px) {
+    .cookie-consent {
+        padding: 8px;
+    }
+
+    .cookie-consent__content {
+        padding: 12px 14px;
+        gap: 10px;
+        font-size: 15px;
+    }
+
+    .cookie-consent__options {
+        gap: 6px;
+    }
+
+    .cookie-consent__option {
+        padding: 8px 10px;
+    }
+
+    .cookie-consent__actions {
+        gap: 8px;
+    }
+
+    .cookie-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .cookie-settings {
+        padding: 12px;
+    }
+
+    .cookie-settings__panel {
+        width: min(560px, 100%);
+        padding: 14px 16px;
+        font-size: 15px;
+    }
+
+    .cookie-settings__close {
+        font-size: 22px;
+    }
+
+    .cookie-settings__body {
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .cookie-settings__row {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .cookie-settings__footer {
+        gap: 8px;
+    }
+
+    .cookie-manage {
+        padding: 8px 12px;
+        font-size: 14px;
+        bottom: 14px;
+        left: 14px;
+    }
+}
+
 @media (min-width: 768px) {
     .cookie-consent__content {
         grid-template-columns: 2fr 1fr;
