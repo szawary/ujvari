@@ -10,11 +10,59 @@ $ALAPÉRTELMEZETT_NYELV = 'en';
 
 $nyelv = $ALAPÉRTELMEZETT_NYELV;
 
+/**
+ * A böngésző Accept-Language fejlécéből választja ki a támogatott nyelvet
+ * a q értékek és a megjelenési sorrend figyelembevételével.
+ */
+function valassz_nyelvet_fejlecbol(string $fejlec, array $tamogatott_nyelvek, string $alapertelmezett): string
+{
+    $preferenciak = [];
+    $reszek = array_filter(array_map('trim', explode(',', $fejlec)));
+
+    foreach ($reszek as $index => $elem) {
+        $lang_reszek = explode(';', $elem);
+        $nyelvkod = strtolower(trim($lang_reszek[0] ?? ''));
+
+        if (empty($nyelvkod)) {
+            continue;
+        }
+
+        // Csak az elsődleges kódra van szükség (hu-HU -> hu)
+        $nyelvkod = substr($nyelvkod, 0, 2);
+
+        $q = 1.0;
+        if (isset($lang_reszek[1]) && preg_match('/q=([0-9.]+)/', $lang_reszek[1], $egyezes)) {
+            $q = (float) $egyezes[1];
+        }
+
+        $preferenciak[] = [
+            'kod' => $nyelvkod,
+            'q' => $q,
+            'index' => $index,
+        ];
+    }
+
+    usort($preferenciak, function ($a, $b) {
+        if ($a['q'] === $b['q']) {
+            return $a['index'] <=> $b['index'];
+        }
+        return $b['q'] <=> $a['q'];
+    });
+
+    foreach ($preferenciak as $preferencia) {
+        if (in_array($preferencia['kod'], $tamogatott_nyelvek)) {
+            return $preferencia['kod'];
+        }
+    }
+
+    return $alapertelmezett;
+}
+
 // 1.1. Felülbírálás GET paraméterrel (pl. ha a felhasználó rákattint egy nyelvi linkre)
 if (isset($_GET['lang']) && in_array($_GET['lang'], $TÁMOGATOTT_NYELVEK)) {
     $nyelv = $_GET['lang'];
     $_SESSION['lang'] = $nyelv; // Eltárolás a munkamenetben
-} 
+}
 // 1.2. Visszaállítás a Session-ből (ha már járt itt)
 elseif (isset($_SESSION['lang'])) {
     $nyelv = $_SESSION['lang'];
@@ -22,18 +70,12 @@ elseif (isset($_SESSION['lang'])) {
 // 1.3. Automatikus felismerés a böngésző Accept-Language fejlécéből (Csak első alkalommal)
 else {
     $preferalt_nyelvek = strtolower($_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? '');
-    
-    // Német (de) az első (Német nyelvterületre)
-    if (strpos($preferalt_nyelvek, 'de') !== false) {
-        $nyelv = 'de';
-    } 
-    // Magyar (hu) a második (Magyarországról)
-    elseif (strpos($preferalt_nyelvek, 'hu') !== false) {
-        $nyelv = 'hu';
-    }
-    // Egyébként az alapértelmezett 'en' marad
 
-    $_SESSION['lang'] = $nyelv; 
+    if (!empty($preferalt_nyelvek)) {
+        $nyelv = valassz_nyelvet_fejlecbol($preferalt_nyelvek, $TÁMOGATOTT_NYELVEK, $ALAPÉRTELMEZETT_NYELV);
+    }
+
+    $_SESSION['lang'] = $nyelv;
 }
 
 // --- 2. Tartalom beolvasása (Lokalizáció) ---
