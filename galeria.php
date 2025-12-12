@@ -510,6 +510,10 @@
         <a class="next-button">&#10095;</a>
     </div>
 
-    <script src="/assets/js/script.js" defer></script>
+    <script src="/assets/js/language.js"></script>
+    <script src="/assets/js/lightbox.js"></script>
+    <script src="/assets/js/menu.js"></script>
+    <script src="/assets/js/cookies.js"></script>
+    <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
