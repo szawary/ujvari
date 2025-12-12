@@ -7,7 +7,7 @@
             <p><?php echo $FORDITASOK['about_p4']; ?></p>
         </div>
         <div class="image-content">
-            <img src="../images/profil.jpg" alt="<?php echo $FORDITASOK['profile_alt']; ?>" class="profile-image">
+            <img src="../images/profil.jpg" alt="<?php echo $FORDITASOK['profile_alt'] ?? ''; ?>" class="profile-image">
         </div>
     </section>
 
