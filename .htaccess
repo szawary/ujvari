@@ -1,5 +1,15 @@
+# Tiltja a mappalistázást globálisan
+Options -Indexes
+
+# Egyedi hibaoldal 403-as és 404-es válaszokra
+ErrorDocument 403 /error.html
+ErrorDocument 404 /error.html
+
 RewriteEngine On
 RewriteBase /
+
+# Direkt mappahívások tiltása a legfontosabb könyvtárakra (a fájlok ettől még kiszolgálhatók)
+RewriteRule ^(images|includes|lang|pages)/?$ - [F]
 
 # 1. Ha a kérés nem létező fájl vagy mappa
 RewriteCond %{REQUEST_FILENAME} !-f
