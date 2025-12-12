@@ -38,7 +38,7 @@ global $nyelv, $keresett_oldal, $FORDITASOK;
         <meta property="og:image" content="<?php echo $ALAP_DOMAIN; ?>/images/profil.jpg">
     <?php endif; ?>
 
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
