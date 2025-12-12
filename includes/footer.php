@@ -97,7 +97,7 @@ global $FORDITASOK;
 
     <button type="button" class="cookie-manage" id="cookie-manage" data-i18n="manage">Cookie settings</button>
 
-    <script src="/script.js"></script>
+    <script src="/assets/js/script.js" defer></script>
 
 </body>
 </html>
